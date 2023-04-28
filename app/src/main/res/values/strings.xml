@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Трекер привычек</string>
+    <string name="item4">Item4</string>
+    <string-array name="trackers_name"></string-array>
+</resources>

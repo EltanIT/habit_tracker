@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:focusable="true"
+    android:id="@+id/days_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="день"
+                   android:textStyle="bold"
+                   android:textSize="25sp"
+                   android:layout_margin="10dp"
+                   android:gravity="center"
+                   />
+               <TextView
+                   android:id="@+id/textView_datNumber"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="30"
+                   android:textStyle="bold"
+                   android:textSize="25sp"
+                   android:layout_gravity="center_vertical"
+                   />
+
+           </LinearLayout>
+
+           <CheckBox
+               android:id="@+id/checkbox_days"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:textSize="25sp"
+               android:layout_centerVertical="true"
+               android:checked="false"
+               >
+           </CheckBox>
+       </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
